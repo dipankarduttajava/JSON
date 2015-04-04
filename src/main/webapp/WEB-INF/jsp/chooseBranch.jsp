@@ -76,10 +76,6 @@
 		              }));
 		          });
 		      },
-		      messages: {
-		          noResults: '',
-		          results: function() {}
-		      },
 		      delay: 100,
 		      focus: function( event, ui ) {
 		    	  	$(".ui-helper-hidden-accessible").hide();
