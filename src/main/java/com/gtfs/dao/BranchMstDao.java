@@ -7,4 +7,5 @@ import com.gtfs.dto.BranchMstDto;
 public interface BranchMstDao {
 	List<BranchMstDto> findAll();
 	List<BranchMstDto> findById(Long id);
+	List<BranchMstDto> findBranchByName(String name);
 }

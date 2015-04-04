@@ -25,4 +25,10 @@ public class BranchMstServiceImpl implements BranchMstService,Serializable {
 	public List<BranchMstDto> findById(Long id) {
 		return branchMstDao.findById(id);
 	}
+
+
+	@Override
+	public List<BranchMstDto> findBranchByName(String name) {
+		return branchMstDao.findBranchByName(name);
+	}
 }

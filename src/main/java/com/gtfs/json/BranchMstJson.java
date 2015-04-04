@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.gtfs.dto.BranchMstDto;
@@ -26,6 +27,11 @@ public class BranchMstJson implements Serializable{
 	@RequestMapping(value="/branch/findAll")	
 	public @ResponseBody List<BranchMstDto> findAll(Model model){
 		return branchMstService.findAll();
+	}
+	
+	@RequestMapping(value="/branch/findBranchByName")	
+	public @ResponseBody List<BranchMstDto> findBranchByName(Model model,@RequestParam("name") String name){
+		return branchMstService.findBranchByName(name);
 	}
 	
 	@RequestMapping(value="/branch/findById/{id}")	

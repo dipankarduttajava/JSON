@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="/resources/css/bootstrap/datepicker3.min.css" />
 <link rel="stylesheet" href="/resources/css/bootstrap/formValidation.min.css">
 <script src="/resources/js/bootstrap/jquery-latest.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="/resources/js/bootstrap/bootstrap.min.js"></script>
 <script src="/resources/js/bootstrap/jquery.dataTables.min.js"></script>

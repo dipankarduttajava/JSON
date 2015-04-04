@@ -8,7 +8,7 @@
 	
 	<http use-expressions="true" >
 		<intercept-url pattern="/admin/users**" access="hasRole('10021')" />
-		<!-- <intercept-url pattern="/branch/**" access="isAuthenticated()" /> -->
+		<intercept-url pattern="/branch/**" access="isAuthenticated()" />
 		<intercept-url pattern="/admin/**" access="isAuthenticated()" />
 		<intercept-url pattern="/licBranchActivity/**" access="isAuthenticated()" />
 		<intercept-url pattern="/chooseBranch**" access="isAuthenticated()"/>
